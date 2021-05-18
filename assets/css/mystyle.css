@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap");
+:root {
+  --color-option: #1d2d50;
+  --color-main: #133b5c;
+}
+* {
+  font-family: "Merriweather", serif;
+}
+.bi {
+  margin-right: 0.25rem;
+}
+
+.navbar .container {
+  max-width: 52em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bg-main {
+  background-color: var(--color-option);
+}
+
+.bg-option {
+  background-color: var(--color-main);
+}
+
+/*
+ * Header
+ */
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* 
+  Main
+*/
+main.container-fluid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fillable div:last-of-type {
+  border-right: 1px solid #0d6efd !important;
+}
+.fillable:last-of-type {
+  border-bottom: 1px solid #0d6efd !important;
+}
+form .row:first-of-type * {
+  min-height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.fillable div {
+  border-left: 1px solid #0d6efd !important;
+  border-top: 1px solid #0d6efd !important;
+}
+
+.fillable div .form-control-sm {
+  border-radius: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .fillable {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .fillable div {
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+  }
+  .fillable div:last-of-type {
+    border: 0px !important;
+  }
+}
+
+#result {
+  min-height: 28rem;
+  overflow: auto;
+  position: relative;
+}
+
+#formTable.hide {
+  opacity: 0;
+  /* display: none; */
+  /* transition: opacity 2s linear; */
+}
+#formTable {
+  opacity: 1;
+  /* display: block; */
+  transition: opacity 1s linear;
+}
+
+.lds-dual-ring {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #0d6efd;
+  border-color: #0d6efd transparent #0d6efd transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about .card .row img {
+  -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(75%);
+}
+
+.docs ul li,
+.docs h6 {
+  letter-spacing: 1px !important;
+}
+
+.docs #resultPost,
+.docs #resultGet {
+  min-height: 10rem;
+}
