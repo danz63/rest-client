@@ -4,7 +4,8 @@ Simple Rest Client For Request To Rest Server
 
 ## Directory Path
 
-rest-client
+```
+.
 ├── app
 │   ├── about.php
 │   ├── Curl.php
@@ -23,6 +24,7 @@ rest-client
 ├── index.php
 ├── LICENSE
 └── readme.md
+```
 
 ## How To Install
 
