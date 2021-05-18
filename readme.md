@@ -20,7 +20,7 @@ Simple Rest Client For Request To Rest Server
 │   │   ├── post.png
 │   │   └── proccess.svg
 │   └── js
-│   └── myscript.js
+│       └── myscript.js
 ├── index.php
 ├── LICENSE
 └── readme.md
