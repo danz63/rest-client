@@ -5,7 +5,7 @@ Simple Rest Client For Request To Rest Server
 ## How To Install
 
 ```
-git clone
+git clone https://github.com/danz63/rest-client.git
 ```
 
 ## License
