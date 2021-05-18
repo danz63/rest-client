@@ -49,7 +49,6 @@
                             <li>Fill <b>URL FORM</b> With API Server's Endpoint</li>
                             <li>Click <b>PROCCES BUTTON</b> or Hit Enter when <b>URL FORM</b> is focused</li>
                             <li>If Endpoint responds, in <b>RESULT BOX</b> will appear response</li>
-                            <li>Try this in the form below</li>
                         </ul>
                     </div>
                 </div>

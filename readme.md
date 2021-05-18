@@ -2,6 +2,28 @@
 
 Simple Rest Client For Request To Rest Server
 
+## Directory Path
+
+rest-client
+├── app
+│   ├── about.php
+│   ├── Curl.php
+│   ├── docs.php
+│   └── handler.php
+├── assets
+│   ├── css
+│   │   └── mystyle.css
+│   ├── img
+│   │   ├── get.png
+│   │   ├── image10.jpg
+│   │   ├── post.png
+│   │   └── proccess.svg
+│   └── js
+│   └── myscript.js
+├── index.php
+├── LICENSE
+└── readme.md
+
 ## How To Install
 
 ```
