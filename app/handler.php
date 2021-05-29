@@ -1,5 +1,9 @@
 <?php
-$url = filter_var($_POST['url'], FILTER_SANITIZE_URL);
+$url = $_POST['url'];
+$url = str_replace(' ', '%20', $url);
+// echo $url;
+// die;
+// $url = filter_var($_POST['url'], FILTER_SANITIZE_URL);
 $method = filter_var($_POST['method'], FILTER_SANITIZE_STRING);
 unset($_POST['url']);
 unset($_POST['method']);

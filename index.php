@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REST Client</title>
+    <title>Niliki API</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha256-PDJQdTN7dolQWDASIoBVrjkuOEaI137FI15sqI3Oxu8=" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/mystyle.css">
@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-main">
             <div class="container">
-                <h3 class="float-md-start mb-0">Rest Client</h3>
+                <h3 class="float-md-start mb-0">Niliki API</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -81,6 +81,42 @@
                         <div class="lds-dual-ring" id="loading">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col p-lg-5 p-2 border rounded">
+                    <h4 class="border-bottom border-3 py-2 my-4">Wanna Try?</h4>
+                    <p>Here are some examples of Endpoint</p>
+                    <label class="form-label">GET</label>
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control form-control-sm bg-main" readonly value="http://www.omdbapi.com/?apikey=a7ec2b75&s=harry potter" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" id="request" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy To Clipboard" onclick="copyToClipboard(this);"><i class="bi bi-clipboard-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control form-control-sm bg-main" readonly value="https://api.jikan.moe/v3/search/anime?q=tensei shitara" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" id="request" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy To Clipboard" onclick="copyToClipboard(this);"><i class="bi bi-clipboard-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control form-control-sm bg-main" readonly value="https://my-json-server.typicode.com/danz63/fake-rest-server/posts" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" id="request" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy To Clipboard" onclick="copyToClipboard(this);"><i class="bi bi-clipboard-plus"></i></button>
+                        </div>
+                    </div>
+                    <label class="form-label mt-3">POST</label>
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control form-control-sm bg-main" readonly value="https://my-json-server.typicode.com/danz63/fake-rest-server/posts" />
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-primary" id="request" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy To Clipboard" onclick="copyToClipboard(this);"><i class="bi bi-clipboard-plus"></i></button>
+                        </div>
+                    </div>
+                    <p class="mb-0"><small>Fill in <b>Key 1</b> With `id`, <b>Value 1</b> With `1`</small></p>
+                    <p class="mb-0"><small>Fill in <b>Key 2</b> With `title`, <b>Value 2</b> With `Hello World`</small></p>
                 </div>
             </div>
         </div>

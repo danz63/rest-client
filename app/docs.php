@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REST Client</title>
+    <title>Niliki API</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha256-PDJQdTN7dolQWDASIoBVrjkuOEaI137FI15sqI3Oxu8=" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/mystyle.css">
@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-main">
             <div class="container">
-                <h3 class="float-md-start mb-0">Rest Client</h3>
+                <h3 class="float-md-start mb-0">Niliki API</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,9 +46,9 @@
                         <h6 class="border-bottom border-2">Tutorials</h6>
                         <ul>
                             <li>Set <b>TOGGLE METHOD</b> To `Get`</li>
-                            <li>Fill <b>URL FORM</b> With API Server's Endpoint</li>
+                            <li>Fill in <b>URL FORM</b> With API Server's Endpoint</li>
                             <li>Click <b>PROCCES BUTTON</b> or Hit Enter when <b>URL FORM</b> is focused</li>
-                            <li>If Endpoint responds, in <b>RESULT BOX</b> will appear response</li>
+                            <li>If Endpoint returns Response, <b>RESULT BOX</b> will show The Result From Server</li>
                         </ul>
                     </div>
                 </div>
@@ -62,10 +62,10 @@
                         <h6 class="border-bottom border-2">Tutorials</h6>
                         <ul>
                             <li>Set <b>TOGGLE METHOD</b> To `Post`</li>
-                            <li>Fill <b>URL FORM</b> With API Server's Endpoint</li>
-                            <li>Fill <b>KEY FORM</b> and <b>VALUE FORM</b></li>
+                            <li>Fill in <b>URL FORM</b> With API Server's Endpoint</li>
+                            <li>Fill in <b>KEY FORM</b> and <b>VALUE FORM</b></li>
                             <li>Click <b>PROCCES BUTTON</b> or Hit Enter when <b>URL FORM</b> is focused</li>
-                            <li>If Endpoint responds, in <b>RESULT BOX</b> will appear response</li>
+                            <li>If Endpoint returns Response, <b>RESULT BOX</b> will show The Result From Server</li>
                         </ul>
                     </div>
                 </div>

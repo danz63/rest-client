@@ -20,7 +20,7 @@ function ajax(data = "", success, load) {
 
 function generateStringData(form) {
   let method = form.elements.namedItem("method").value;
-  let url = form.elements.namedItem("url").value;
+  let url = encodeURIComponent(form.elements.namedItem("url").value);
   let params = encodeURIComponent(`url=${url}&method=${method}`);
   if (method === "post") {
     let key = form.elements.namedItem("key[]");
@@ -69,6 +69,13 @@ function request() {
   let params = generateStringData(document.getElementById("formRequest"));
   ajax(params, success, load);
 }
+
+function copyToClipboard(btn) {
+  let inputValue = btn.parentNode.previousSibling.previousSibling;
+  inputValue.select();
+  inputValue.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
 document.onreadystatechange = function () {
   if (document.readyState == "interactive") {
     /**
@@ -86,12 +93,30 @@ document.onreadystatechange = function () {
         }
       });
     }
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
     /**
      * Show Or Hide Form Table
      */
     if (typeof document.getElementById("switchSelect") != "undefined" && document.getElementById("switchSelect") != null) {
       document.getElementById("switchSelect").addEventListener("change", function () {
-        document.getElementById("formTable").classList.toggle("hide");
+        let formTable = document.getElementById("formTable");
+        formTable.classList.toggle("hide");
+        if (formTable.className === "hide") {
+          formTable.style.opacity = 0;
+          formTable.style.transform = "scale(0)";
+          window.setTimeout(function () {
+            formTable.style.display = "none";
+          }, 700);
+        } else {
+          formTable.style.display = "block";
+          window.setTimeout(function () {
+            formTable.style.opacity = 1;
+            formTable.style.transform = "scale(1)";
+          }, 0);
+        }
       });
     }
   }

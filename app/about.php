@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REST Client</title>
+    <title>Niliki API</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha256-PDJQdTN7dolQWDASIoBVrjkuOEaI137FI15sqI3Oxu8=" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/mystyle.css">
@@ -15,7 +15,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-main">
             <div class="container">
-                <h3 class="float-md-start mb-0">Rest Client</h3>
+                <h3 class="float-md-start mb-0">Niliki API</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,7 +69,15 @@
                             <span class="fs-6">Request With Header</span>
                             <i class="bi bi-clock-fill text-warning"></i>
                         </li>
+                        <li class="list-group-item d-flex justify-content-between bg-main text-white border-bottom border-light">
+                            <span class="fs-6">History Request</span>
+                            <i class="bi bi-clock-fill text-warning"></i>
+                        </li>
                     </ul>
+                    <div class="ms-2 mt-2">
+                        <p class="mb-0"><small><i class="bi bi-check-circle text-info"></i>&nbsp;Done</small></p>
+                        <p class="mb-0"><small><i class="bi bi-clock-fill text-warning"></i>&nbsp;Coming Soon</small></p>
+                    </div>
                 </div>
             </div>
         </section>

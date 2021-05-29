@@ -90,6 +90,18 @@ form .row:first-of-type * {
   .fillable div:last-of-type {
     border: 0px !important;
   }
+  form .input-group {
+    flex-direction: column;
+  }
+  form .input-group .form-control,
+  form .input-group .input-group-prepend {
+    width: 100%;
+    border-radius: 0.25rem !important;
+    margin: 0.5rem 0;
+  }
+  form .input-group .input-group-append {
+    text-align: center;
+  }
 }
 
 #result {
@@ -99,14 +111,13 @@ form .row:first-of-type * {
 }
 
 #formTable.hide {
-  opacity: 0;
-  /* display: none; */
-  /* transition: opacity 2s linear; */
+  display: none;
 }
 #formTable {
-  opacity: 1;
-  /* display: block; */
-  transition: opacity 1s linear;
+  transition: 2s ease all;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.6s ease opacity, 0.6s ease transform;
 }
 
 .lds-dual-ring {
